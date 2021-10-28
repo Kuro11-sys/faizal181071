@@ -392,8 +392,9 @@ p1 {
       rgba(29, 224, 153, 0.8),
       rgba(29, 200, 205, 0.8)
     ),
-    url("../img/Asset 20.png") center no-repeat;
-  background-size: 500px;
+    url("../img/464-4647320_png-onlygfx-com-free-download-grungexpng-grunge-x.png")
+      center no-repeat;
+  background-size: 300px;
   position: relative;
 }
 @media (min-width: 1025px) {
@@ -1255,7 +1256,6 @@ section {
   margin-top: 2cm;
   margin-left: 0.5cm;
   margin-right: 0.5cm;
- 
 }
 .bok1 {
   margin-top: 0.5cm;
@@ -1280,8 +1280,16 @@ na {
 }
 
 .card {
-  width: 15.4rem;
-  height: 25.7rem;
+  margin-top: 6cm;
+  margin-left: auto;
+  margin-right: auto;
+  width: 20cm;
+  height: 10cm;
+  padding-top: 0.5cm;
+  padding-left: 2cm;
+  background-color: transparent;
+  border-color: transparent;
+  border: 0px;
 }
 .card1 {
   height: 4rem;
@@ -1300,7 +1308,7 @@ na {
 }
 
 .column {
-  width: auto;
+  width: 8cm;
 }
 .colnam {
   background-color: transparent;
@@ -1319,11 +1327,11 @@ na {
   box-shadow: 5px5px5px#eee;
   text-shadow: none;
 }
-.form-submit:hover{
-  background:#00ff2a;
-  color:#fff;
-  border:1pxsolid#eee;
-  border-radius:20px;
-  box-shadow:5px5px5px#eee;
-  text-shadow:none;
+.form-submit:hover {
+  background: #00ff2a;
+  color: #fff;
+  border: 1pxsolid#eee;
+  border-radius: 20px;
+  box-shadow: 5px5px5px#eee;
+  text-shadow: none;
 }
