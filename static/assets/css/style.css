@@ -1277,10 +1277,11 @@ na {
   margin-top: 6cm;
   margin-left: auto;
   margin-right: auto;
-  width: 20cm;
-  height: 10cm;
+  max-width: 20cm;
+  padding-inline: 2.3cm;
   padding-top: 0.5cm;
-  padding-left: 2cm;
+
+
   background-color: transparent;
   border-color: transparent;
   border: 0px;
@@ -1302,7 +1303,7 @@ na {
 }
 
 .column {
-  width: 8cm;
+  max-width: 8cm;
 }
 .colnam {
   background-color: transparent;
