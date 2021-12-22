@@ -18,42 +18,24 @@
 <!-- ======= Hero Section ======= -->
 <section id="hero">
   <div class="hero-text" data-aos="zoom-out">
-    <h2><strong>Pemrograman Lanjut</strong></h2>
+    <h2><strong>Derivative</strong></h2>
   </div>
   <div class="card" data-aos="zoom-out">
     <div class="row">
       <div class="column" style="margin-top: auto; margin-bottom: auto">
-        <table style="color: black">
-          <tr>
-            <td style="width: 2.5cm">Nama</td>
-            <td>:</td>
-            <td>Faizal Rifky Fahreza</td>
-          </tr>
-          <tr>
-            <td>NIM</td>
-            <td>:</td>
-            <td>181810101071</td>
-          </tr>
-          <tr>
-            <td>Jurusan</td>
-            <td>:</td>
-            <td>Matematika</td>
-          </tr>
-          <tr>
-            <td style="vertical-align: text-top">Fakultas</td>
-            <td style="vertical-align: text-top">:</td>
-            <td>Matematika dan Ilmu Pengetahuan Alam</td>
-          </tr>
-        </table>
-        <button type="button" class="btn btn-success" onclick="location.href='{% url 'main:turunan' %}'">Derivative</button>
-        <button type="button" class="btn btn-success" onclick="location.href='{% url 'main:integral' %}'">Integral</button>
-
+  <form method="post" name="deriv">
+    {% csrf_token %}
+    <label>Masukkan variabel :</label>
+    <input type="text" name="var1" value="{{var1}}">
+    <label>Masukkan Persamaan :</label>
+    <textarea type="text" name="pers">{{y}}</textarea><br><br>
+    <input type="submit" value="Solve" class="btn btn-success">
+  </form>
+        <br>
+ <button type="button" class="btn btn-danger" onclick="location.href='{% url 'main:home' %}'">Back</button>
       </div>
       <div class="column" >
-        <img
-          src="{% static 'assets/img/image.jpg' %}"
-          style="height: 7cm; border-radius: 50pt"
-        />
+      <p style="color:black">{{yprime}}</p>
       </div>
     </div>
   </div>
