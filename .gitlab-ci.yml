@@ -35,16 +35,7 @@ UnitTest:
     - coverage run --parallel --include="./*" --omit="manage.py,faizal181071/*"
       manage.py test --exclude-tag=functional
 
-FunctionalTest:
-  <<: *disable_on_template
-  <<: *coverage_artifacts
-  stage: test
-  before_script:
-    - apt-get update -q && apt-get install -yq chromium-driver
-    - *django_before_script
-  script:
-    - coverage run --parallel --include="./*" --omit="manage.py,faizal181071/*"
-      manage.py test --tag=functional
+
 
 
 Coverage:
